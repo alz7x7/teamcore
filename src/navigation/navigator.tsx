@@ -28,7 +28,7 @@ const AppNavigator: React.FC = () => {
           setInitialRoute('Questions');
         }
       } catch (error) {
-        console.error('Error reading appState from AsyncStorage:', error);
+        setInitialRoute('Questions');
       }
     };
     checkAppState();
